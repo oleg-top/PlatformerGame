@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 13312, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: LuckyMap_172
+  m_Name: LuckyMap_174
   m_EditorClassIdentifier: 
   m_Sprite: {fileID: 6774722195687463383, guid: 2d070ddf9fadb254db7ef74f9091971a,
     type: 3}
-  m_Color: {r: 0, g: 0.9607843, b: 0.9607843, a: 1}
+  m_Color: {r: 0.98039216, g: 0.74509805, b: 0, a: 1}
   m_Transform:
     e00: 1
     e01: 0
