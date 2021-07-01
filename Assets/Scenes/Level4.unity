@@ -18017,17 +18017,17 @@ PrefabInstance:
     - target: {fileID: 3674484436638000476, guid: 077693ca96953e84f844878750900fb2,
         type: 3}
       propertyPath: MoveVector.x
-      value: 2
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 3674484436638000476, guid: 077693ca96953e84f844878750900fb2,
         type: 3}
       propertyPath: interval
-      value: 4
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3674484436638000476, guid: 077693ca96953e84f844878750900fb2,
         type: 3}
       propertyPath: firstChange
-      value: 4
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3674484436638000479, guid: 077693ca96953e84f844878750900fb2,
         type: 3}
@@ -18444,17 +18444,17 @@ PrefabInstance:
     - target: {fileID: 3674484436638000476, guid: 077693ca96953e84f844878750900fb2,
         type: 3}
       propertyPath: MoveVector.x
-      value: -2
+      value: -4
       objectReference: {fileID: 0}
     - target: {fileID: 3674484436638000476, guid: 077693ca96953e84f844878750900fb2,
         type: 3}
       propertyPath: interval
-      value: 4
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3674484436638000476, guid: 077693ca96953e84f844878750900fb2,
         type: 3}
       propertyPath: firstChange
-      value: 4
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3674484436638000479, guid: 077693ca96953e84f844878750900fb2,
         type: 3}
