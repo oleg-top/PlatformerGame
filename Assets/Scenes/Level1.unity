@@ -602,7 +602,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u0412\u0435\u0440\u043D\u0443\u0442\u044C\u0441\u044F \u0432 \u0438\u0433\u0440\u0443\n"
+  m_Text: Return
 --- !u!222 &104461476
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -762,7 +762,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u0412\u044B\u0439\u0442\u0438 \u0438\u0437 \u0438\u0433\u0440\u044B\n"
+  m_Text: 'Exit game
+
+'
 --- !u!222 &151483920
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4086,8 +4088,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u0412\u044B\u0439\u0442\u0438 \u0432 \u0433\u043B\u0430\u0432\u043D\u043E\u0435
-    \u043C\u0435\u043D\u044E\n"
+  m_Text: 'Exit to menu
+
+'
 --- !u!222 &1295330255
 CanvasRenderer:
   m_ObjectHideFlags: 0
