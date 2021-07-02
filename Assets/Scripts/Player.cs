@@ -7,18 +7,22 @@ public class Player : MonoBehaviour
     public float moveSpeed = 4;
     public float jumpForce = 5;
     public int maxJumps = 2;
+    public enum ControlType { PC, Mobile }
+    public ControlType _control = ControlType.PC;
 
     private bool jumpOrder;
     private Rigidbody2D rbody;
     private Animator myAnimator;
     private SpriteRenderer sprite;
     private int jumps = 0;
+    private VariableJoystick _joystick;
 
     void Start()
     {
         rbody = GetComponent<Rigidbody2D>();
         myAnimator = GetComponent<Animator>();
         sprite = GetComponentInChildren<SpriteRenderer>();
+        _joystick = GetComponentInChildren<VariableJoystick>();
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -29,6 +33,11 @@ public class Player : MonoBehaviour
         }
     }
 
+    public void SetJumpOrder()
+    {
+        jumpOrder = true;
+    }
+
     void Update()
     {
         jumpOrder |= Input.GetButtonDown("Jump");
@@ -36,10 +45,12 @@ public class Player : MonoBehaviour
 
     void FixedUpdate()
     {
+        var horizontal = ControlType.PC == _control ? Input.GetAxis("Horizontal") : _joystick.Horizontal;
+        var axisActive = ControlType.PC == _control ? Input.GetButton("Horizontal") : Mathf.Abs(_joystick.Horizontal) > 0.1f;
         var velocity = rbody.velocity;
-        velocity.x = Input.GetAxis("Horizontal") * moveSpeed;
-        myAnimator.SetBool("walk", Input.GetButton("Horizontal"));
-        if (Input.GetButton("Horizontal"))
+        velocity.x =  horizontal * moveSpeed;
+        myAnimator.SetBool("walk", axisActive);
+        if (axisActive)
         {
             sprite.flipX = velocity.x < 0;
         }
