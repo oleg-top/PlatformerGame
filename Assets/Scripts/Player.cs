@@ -8,6 +8,7 @@ public class Player : MonoBehaviour
     public float jumpForce = 5;
     public int maxJumps = 2;
     public enum ControlType { PC, Mobile }
+
     public ControlType _control = ControlType.PC;
 
     private bool jumpOrder;
@@ -16,9 +17,17 @@ public class Player : MonoBehaviour
     private SpriteRenderer sprite;
     private int jumps = 0;
     private VariableJoystick _joystick;
-
+    
     void Start()
     {
+        if (ControlCheck.PcControl)
+        {
+            _control = ControlType.PC;
+        }
+        else
+        {
+            _control = ControlType.Mobile;
+        }
         rbody = GetComponent<Rigidbody2D>();
         myAnimator = GetComponent<Animator>();
         sprite = GetComponentInChildren<SpriteRenderer>();
